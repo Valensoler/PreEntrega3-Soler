@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Anton&family=Poppins:wght@200&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.navbar{
+    background-color: rgba(255, 0, 0, 0.7);
+    height: 100px;
+}
+
+.navbar a{
+    font-size: 25px;
+    color: #fff;
+}
+
+.nombre{
+    color: #fff;
+    text-shadow: 0 0 5px #000;
+}
+
+.jumbotron{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url(./fotos/formasbasicas.jpg);
+    background-size: cover;
+    height: 660px;
+    background-position: center;
+    color:aliceblue;
+    font-family:'Poppins', sans-serif;
+    letter-spacing: 5px;
+    margin: 0;
+}
+
+.jumbotron button{
+    font-weight: bold;
+}
+
+h3{
+    background-color: rgba(255, 0, 0, 0.7);
+    color:#fff;
+    text-align: center;
+    padding: 20px;
+    font-size: 50px;
+}
+
+h3{
+    animation-duration: 3s;
+    animation-name: aparecer2;
+    animation-delay: 1s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+    @keyframes aparecer2{
+        50%{
+            opacity: 0.5;
+        }
+        100%{
+            opacity: 1;
+        }
+}
+
+h4{
+    font-family:Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 40px;
+    margin: 0;
+}
+
+.nright{
+    height: 700px;
+    background-image: url(./fotos/plazamonoblock.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.nleft{
+    font-size: 30px;
+    text-align: justify;
+    padding: 20px;
+    margin-top: 15px;
+}
+
+.nleft p{
+    margin-top: 40px;
+}
+
+.nleft ::selection{
+    background-color: rgba(211, 35, 35, 0.5);
+}
+
+.nleft button{
+    border: 2px solid #000;
+    margin-top: 40px;
+    margin-left: 200px;
+    font-size: 30px;
+}
+
+.prod{
+    height: 400px;
+    border: 2px solid rgba(255, 0, 0, 0.7);
+}
+
+.prod1{
+    background-image: url(./fotos/grua.jpg);
+}
+.prod2{
+    background-image: url(./fotos/camionrobot.jpg);
+    background-size: cover;
+}
+.prod3{
+    background-image: url(./fotos/3en1.jpeg);
+    background-size: cover;
+}
+
+footer{
+    height: auto;
+    width: 100%;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    background-color: rgba(255, 0, 0, 0.7);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url(./fotos/formasbasicas.jpg);
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+    box-shadow: 0 0 5px 1px #fff;
+    padding: 15px;
+}
+
+footer a{
+    color:#fff;
+    letter-spacing: 50px;
+    font-size: 50px;
+}
+
+footer a:hover{
+    color: rgba(255, 0, 0, 0.5);
+}
