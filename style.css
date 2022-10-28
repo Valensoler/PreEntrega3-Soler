@@ -6,6 +6,11 @@
     box-sizing: border-box;
 }
 
+html{
+
+    scroll-behavior: smooth;
+}
+
 .navbar{
     background-color: rgba(255, 0, 0, 0.7);
 }
@@ -219,7 +224,7 @@ h5{
     font-size: 40px;
     background-color: rgba(255, 0, 0, 0.5);
     color: #fff;
-    margin: 10px;
+    margin: 20px;
 }
 
 .capi{
@@ -240,8 +245,40 @@ h5{
     margin-top: 40px;
 }
 
-.pedido{
-    margin-left: 500px;
+.form-check-label{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin-left: 180px;
+    font-size: 25px;
+    margin-top: 20px;
+}
+
+.form-check-input{
+    margin-right: 250px;
+}
+
+.nombre{
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 35px;
+}
+
+label{
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 25px;
+}
+
+
+.lista{
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    color:  rgba(255, 0, 0, 0.7);
+    margin-bottom: 40px;
+}
+
+option{
+    color:  rgba(255, 0, 0, 0.7);
 }
 
 footer{

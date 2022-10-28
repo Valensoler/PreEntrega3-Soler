@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="../style.css">
     <title>Contacto</title>
 </head>
-<body>
+<div>
     <!--navbar inicia-->
     <nav class="navbar navbar-expand-md navbar-dark">
         <!-- Brand -->
@@ -41,43 +41,75 @@
     </nav>
     <!--navbar fin-->
     <h3> Contactate con Nosotros</h3>
+
     <!--cuestionario inicia-->
     <div class="nombre form-group container col-sm-8 col-md-7">
         <label for="usr">Nombre Completo:</label>
         <input type="text" class="form-control" id="usr">
     </div>
 
-    <div class="form-group container col-sm-8 col-md-7">
+    <div class="nombre form-group container col-sm-8 col-md-7">
         <label for="usr">Mail de Contacto:</label>
         <input type="email" class="form-control" id="usr">
     </div>
 
-    <div class="form-group container col-sm-8 col-md-7">
+    <div class="nombre form-group container col-sm-8 col-md-7">
         <label for="usr">Telefono de Contacto:</label>
         <input type="number" class="form-control" id="usr">
     </div>
+    
 
-    <div class="enviar">
-        <input type="submit" value="Siguiente">
-        <input type="reset" value="Borrar">
+    <div class="form-check container">
+        <h5> Información del Envio </h5>
+        <label class="form-check-label col-sm-8 col-md-7">
+          <input type="radio" class="form-check-input" name="optradio">CABA
+        </label>
+      </div>
+      <div class="form-check container">
+        <label class="form-check-label col-sm-8 col-md-7">
+          <input type="radio" class="form-check-input" name="optradio">AMBA
+        </label>
+      </div>
+      <div class="form-check container">
+        <label class="form-check-label col-sm-8 col-md-7">
+          <input type="radio" class="form-check-input" name="optradio"> Otra Provincia
+        </label>
+        <div class="nombre form-group container col-sm-8 col-md-7">
+            <label for="usr">Provincia:</label>
+            <input type="text" class="form-control" id="usr">
+        </div>
     </div>
 
-    <h3> Datos de tu Entrega </h3>
-    <div class="entrega">
-        <form action="enviar.php" method="post" enctype="text/plain" netlify>
-        <ol type="circle">
-            <div class="pedido">
-                <li class="entrega"><label for="entrega"> Dia de entrega</label></li>     
-                <li class="entrega"><input id="entrega" name="entrega" type="datetime-local" required></li>
-                <li class="entrega"><label for="indicaciones"> Indicaciones para entregar tu pedido</label></li>
-                <li class="entrega"><textarea name="indicaciones" id="indicaciones" cols="40" rows="4" placeholder="Escribe tus indicaciones."></textarea></li>
-            </div>
-        </ol>
-    </div>        
+    <div class="form-check container">
+        <h5> Información del Envio </h5>
+        <label class="form-check-label col-sm-8 col-md-7">
+          <input type="radio" class="form-check-input" name="optradio">Compra Mayorista
+        </label>
+      </div>
+      <div class="form-check container">
+        <label class="form-check-label col-sm-8 col-md-7">
+          <input type="radio" class="form-check-input" name="optradio">Compra Minorista
+        </label>
+      </div>
 
-    
+    <div class="form-group container">
+        <h5> Motivo de consulta </h5>
+        <label for="sel1">¿Que te Interesaria Saber?</label>
+        <select class="lista form-control" id="sel1">
+          <option>Lista de precios</option>
+          <option>Información de envios</option>
+          <option>Compras</option>
+          <option>Catalogo</option>
+          <option>Otro</option>
+        </select>
+
+        <button type="button" class="btn btn-danger">Enviar</button>
+    </div>
     <!-- cuestionario fin-->
-
+    
+    <a href="#" class="subir">
+        <i class="fa-solid fa-caret-up"></i>
+    </a>
 
     <!--footer inicio-->
     <footer>
