@@ -1,417 +1,395 @@
-@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Anton&family=Poppins:wght@200&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Anton&family=Poppins:wght@200&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 
-*{
+html body {
+  overflow-x: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.navbar {
+  background-color: rgba(255, 0, 0, 0.7);
+}
+.navbar a {
+  font-size: 25px;
+  color: #fff;
+}
+
+.jumbotron {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url(./fotos/formasbasicas.jpg);
+  background-size: cover;
+  height: 660px;
+  background-position: center;
+  color: aliceblue;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 5px;
+  margin: 0;
+}
+.jumbotron button {
+  font-weight: bold;
+}
+
+h3 {
+  background-color: rgba(255, 0, 0, 0.7);
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  font-size: 50px;
+  margin: 0;
+}
+
+h3 {
+  animation-duration: 3s;
+  animation-name: aparecer2;
+  animation-delay: 1s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+
+@keyframes aparecer2 {
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+h4 {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  font-size: 40px;
+  margin: 0;
+}
+
+.nright {
+  height: 700px;
+  background-image: url(./fotos/plazamonoblock.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.nleft {
+  font-size: 30px;
+  text-align: justify;
+  padding: 20px;
+  margin-top: 15px;
+}
+.nleft p {
+  margin-top: 40px;
+}
+.nleft ::selection {
+  background-color: rgba(211, 35, 35, 0.5);
+}
+.nleft button {
+  border: 2px solid #000;
+  margin-top: 40px;
+  margin-left: 200px;
+  font-size: 30px;
+}
+
+.carousel-indicators li {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background-color: rgb(255, 0, 0);
+  border: 2px solid #fff;
+}
+
+.carousel-control-prev span {
+  background-color: rgb(255, 0, 0);
+}
+
+.carousel-control-next span {
+  background-color: rgb(255, 0, 0);
+}
+
+.nos {
+  background-color: rgba(255, 0, 0, 0.5);
+  text-align: justify;
+  font-size: 25px;
+  color: #000;
+  border: 2px solid rgb(250, 94, 94);
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 0;
+}
+
+.video {
+  width: 80%;
+  height: 600px;
+  margin-left: 115px;
+}
+
+.galeria {
+  background-color: rgba(255, 0, 0, 0.5);
+  height: auto;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(4, 550px);
+  grid-gap: 20px;
+}
+.galeria .item {
+  width: 100%;
+  height: auto;
+  border: 8px solid rgba(0, 0, 0, 0.5);
+}
+.galeria .item:hover {
+  transform: scale(1.08);
+  transition: all 1s;
+}
+.galeria .item1 {
+  background-image: url(./fotos/grua.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.galeria .item2 {
+  background-image: url(./fotos/auto.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.galeria .item3 {
+  background-image: url(./fotos/camiones.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.galeria .item4 {
+  background-image: url(./fotos/remolque.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.galeria .item5 {
+  background-image: url(./fotos/autos.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.galeria .item6 {
+  background-image: url(./fotos/camionrobot.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.galeria .item7 {
+  background-image: url(./fotos/variado.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.galeria .item8 {
+  background-image: url(./fotos/caja.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.subir {
+  height: 40px;
+  width: 40px;
+  background-color: rgba(255, 0, 0, 0.5);
+  color: #fff;
+  border: 4px solid #fff;
+  right: 20px;
+  bottom: 20px;
+  text-align: center;
+  font-size: 30px;
+  line-height: 45px;
+  border-radius: 50%;
+  position: fixed;
+  box-shadow: 2px 2px 10px #000;
+}
+
+h5 {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  font-size: 40px;
+  background-color: rgba(255, 0, 0, 0.5);
+  color: #fff;
+  margin: 20px;
+}
+
+.capi, .gba {
+  width: 400px;
+  height: 400px;
+  margin-left: 350px;
+  border: outset 10px rgba(255, 0, 0, 0.5);
+  margin-bottom: 45px;
+  margin-top: 40px;
+}
+
+.form-check-label {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  margin-left: 180px;
+  font-size: 25px;
+  margin-top: 20px;
+}
+
+.form-check-input {
+  margin-right: 250px;
+}
+
+.nombre {
+  font-size: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 35px;
+}
+.nombre label {
+  font-size: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 25px;
+}
+
+.lista {
+  font-size: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgba(255, 0, 0, 0.7);
+  margin-bottom: 40px;
+}
+.lista option {
+  color: rgba(255, 0, 0, 0.7);
+}
+
+footer {
+  height: auto;
+  width: 100%;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
+  background-color: rgba(255, 0, 0, 0.7);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url(./fotos/formasbasicas.jpg);
+  background-position: center;
+  background-size: cover;
+  color: #fff;
+  box-shadow: 0 0 5px 1px #fff;
+  padding: 15px;
+}
+footer a {
+  color: #fff;
+  letter-spacing: 50px;
+  font-size: 50px;
+}
+footer a :hover {
+  color: rgba(255, 0, 0, 0.5);
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  * {
+    margin: 0;
     padding: 0;
-    margin: 0;
     box-sizing: border-box;
-}
-
-html{
-
-    scroll-behavior: smooth;
-}
-
-.navbar{
-    background-color: rgba(255, 0, 0, 0.7);
-}
-
-.navbar a{
-    font-size: 25px;
-    color: #fff;
-}
-
-.jumbotron{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url(./fotos/formasbasicas.jpg);
-    background-size: cover;
-    height: 660px;
-    background-position: center;
-    color:aliceblue;
-    font-family:'Poppins', sans-serif;
-    letter-spacing: 5px;
-    margin: 0;
-}
-
-.jumbotron button{
-    font-weight: bold;
-}
-
-h3{
-    background-color: rgba(255, 0, 0, 0.7);
-    color:#fff;
-    text-align: center;
-    padding: 20px;
-    font-size: 50px;
-    margin: 0;
-}
-
-h3{
-    animation-duration: 3s;
-    animation-name: aparecer2;
-    animation-delay: 1s;
-    animation-direction: alternate;
-    animation-iteration-count: infinite;
-}
-
-    @keyframes aparecer2{
-        50%{
-            opacity: 0.5;
-        }
-        100%{
-            opacity: 1;
-        }
-}
-
-h4{
-    font-family:Arial, Helvetica, sans-serif;
-    text-align: center;
-    font-size: 40px;
-    margin: 0;
-}
-
-.nright{
-    height: 700px;
-    background-image: url(./fotos/plazamonoblock.jpg);
-    background-size: cover;
-    background-position: center;
-}
-
-.nleft{
-    font-size: 30px;
-    text-align: justify;
-    padding: 20px;
-    margin-top: 15px;
-}
-
-.nleft p{
-    margin-top: 40px;
-}
-
-.nleft ::selection{
-    background-color: rgba(211, 35, 35, 0.5);
-}
-
-.nleft button{
+  }
+  .nleft button {
     border: 2px solid #000;
-    margin-top: 40px;
-    margin-left: 200px;
-    font-size: 30px;
-}
-
-.carousel-indicators li{
-    height: 20px;
-    width: 20px;
-    border-radius: 50%;
-    background-color: rgb(255, 0, 0);
-    border: 2px solid #fff;
-}
-
-.carousel-control-prev span{
-    background-color: rgb(255, 0, 0);
-}
-
-.carousel-control-next span{
-    background-color: rgb(255, 0, 0);
-} 
-
-.nos{
-    background-color: rgba(255, 0, 0, 0.5);
-    text-align: justify;
+    margin-left: 100px;
     font-size: 25px;
-    color: #000;
-    border: 2px solid rgba(250, 94, 94);
-    font-family: Arial, Helvetica, sans-serif;
-    margin-bottom: 0;
-}
-
-.video{
-    width: 80%;
-    height: 600px;
-    margin-left: 115px;
-}
-
-.galeria{
-    background-color: rgba(255, 0, 0, 0.5);
-    height: auto;
+  }
+  .video {
     width: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(4, 550px);
-    grid-gap: 20px;
-}
-
-.item{
-    width: 100%;
+    margin: 0;
+  }
+  .galeria {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 200px);
     height: auto;
-    border: 8px solid rgba(0, 0, 0, 0.5);
+    margin: 0%;
+  }
+  .galeria .item1 {
+    grid-column: 1/3;
+    grid-row: 1/3;
+  }
+  .galeria .item4 {
+    grid-column: 3/5;
+    grid-row: 2/4;
+  }
+  .galeria .item7 {
+    grid-column: 1/3;
+    grid-row: 4/5;
+  }
+  .galeria .item8 {
+    grid-column: 3/5;
+    grid-row: 4/5;
+  }
+  .capi, .gba {
+    margin-left: 170px;
+  }
 }
-
-.item:hover{
-    transform: scale(1.08);
-    transition: all 1.0s;
-}
-
-.item1{
-    background-image: url(./fotos/grua.jpg);
-    background-size: cover;
-    background-position: center;
-}
-
-.item2{
-    background-image: url(./fotos/auto.jpg);
-    background-size: cover;
-    background-position: center;
-}
-
-.item3{
-    background-image: url(./fotos/camiones.jpg);
-    background-size: cover;
-    background-position: center;
-}
-
-.item4{
-    background-image: url(./fotos/remolque.jpg);
-    background-size: cover;
-    background-position: center;
-}
-
-.item5{
-    background-image: url(./fotos/autos.jpg);
-    background-size: cover;
-    background-position: center;
-}
-
-.item6{
-    background-image: url(./fotos/camionrobot.jpg);
-    background-size: cover;
-    background-position: center;
-}
-
-.item7{
-    background-image: url(./fotos/variado.jpg);
-    background-size: cover;
-    background-position: center;
-}
-
-.item8{
-    background-image: url(./fotos/caja.jpg);
-    background-size: cover;
-    background-position: center;
-}
-
-.subir{
-    height: 40px;
-    width: 40px;
-    background-color:  rgba(255, 0, 0, 0.5);
-    color: #fff;
-    border: 4px solid #fff;
-    right: 20px;
-    bottom: 20px;
-    text-align: center;
-    font-size: 30px;
-    line-height: 45px;
-    border-radius: 50%;
-    position: fixed;
-    box-shadow: 2px 2px 10px #000;
-}
-
-h5{
-    font-family:Arial, Helvetica, sans-serif;
-    text-align: center;
-    font-size: 40px;
-    background-color: rgba(255, 0, 0, 0.5);
-    color: #fff;
-    margin: 20px;
-}
-
-.capi, .gba{
-    width: 400px;
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .nleft button {
+    margin-left: 170px;
+    font-size: 20px;
+  }
+  .nos {
+    font-size: 20px;
+  }
+  .video {
+    width: 100%;
     height: 400px;
-    margin-left: 350px;
-    border: outset 10px rgba(255, 0, 0, 0.5);
-    margin-bottom: 45px;
-    margin-top: 40px;
+    margin: 0;
+  }
+  .galeria {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4, 260px);
+  }
+  .capi, .gba {
+    margin-left: 30px;
+  }
+  .form-check-label {
+    margin-left: 0;
+  }
 }
-
-.form-check-label{
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-    margin-left: 180px;
+@media only screen and (min-width: 320px) and (max-width: 479px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .navbar a {
+    font-size: 15px;
+  }
+  h3 {
+    font-size: 40px;
+  }
+  .nleft p {
     font-size: 25px;
-    margin-top: 20px;
-}
-
-.form-check-input{
-    margin-right: 250px;
-}
-
-.nombre{
-    font-size: 25px;
-    font-family: Arial, Helvetica, sans-serif;
-    margin-bottom: 35px;
-}
-
-label{
-    font-size: 25px;
-    font-family: Arial, Helvetica, sans-serif;
-    margin-bottom: 25px;
-}
-
-
-.lista{
-    font-size: 25px;
-    font-family: Arial, Helvetica, sans-serif;
-    color:  rgba(255, 0, 0, 0.7);
-    margin-bottom: 40px;
-}
-
-option{
-    color:  rgba(255, 0, 0, 0.7);
-}
-
-footer{
-    height: auto;
+  }
+  .nleft button {
+    font-size: 20px;
+    margin: 0;
+  }
+  .nos {
+    font-size: 15px;
+  }
+  .video {
+    margin: 0;
     width: 100%;
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
+    height: 300px;
+  }
+  .galeria {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(8, 320px);
+  }
+  h5 {
     font-size: 25px;
-    background-color: rgba(255, 0, 0, 0.7);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url(./fotos/formasbasicas.jpg);
-    background-position: center;
-    background-size: cover;
-    color: #fff;
-    box-shadow: 0 0 5px 1px #fff;
-    padding: 15px;
+  }
+  .capi, .gba {
+    margin: 0;
+    width: 100%;
+  }
+  .form-control {
+    font-size: 20px;
+  }
+  .form-check-label {
+    margin-left: 0;
+    font-size: 20px;
+  }
 }
+/*# sourceMappingURL=style.scss.map */
 
-footer a{
-    color:#fff;
-    letter-spacing: 50px;
-    font-size: 50px;
-}
-
-footer a:hover{
-    color: rgba(255, 0, 0, 0.5);
-}
-
-@media only screen and (min-width: 768px) and (max-width: 1023px){
-
-    *{
-        margin:0;
-        padding: 0;
-        box-sizing: border-box;
-    }
-    .nleft button{
-        border: 2px solid #000;
-        margin-left: 100px;
-        font-size: 25px;
-    }
-    .video{
-        width: 100%;
-        margin: 0;
-    }
-    .galeria{
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(4, 200px);
-        height: auto;
-        margin: 0%;
-    }
-    .item1{
-        grid-column: 1/3;
-        grid-row: 1/3;
-    }
-    .item4{
-        grid-column: 3/5;
-        grid-row: 2/4;
-    }
-    .item7{
-        grid-column: 1/3;
-        grid-row: 4/5;
-    }
-    .item8{
-        grid-column: 3/5;
-        grid-row: 4/5;
-    }
-
-    .capi, .gba{
-        margin-left: 170px;
-    }
-}
-
-@media only screen and (min-width: 480px) and (max-width: 767px){
-
-    *{
-        margin:0;
-        padding: 0;
-        box-sizing: border-box;
-    }
-    .nleft button{
-        margin-left: 170px;
-        font-size: 20px;
-    }
-    .nos{
-        font-size: 20px;
-    }
-    .video{
-        width: 100%;
-        height: 400px;
-        margin:0;
-    }
-    .galeria{
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: repeat(4,260px);
-    }
-    .capi, .gba{
-        margin-left: 30px;
-    }
-    .form-check-label{
-        margin-left:0;
-    }
-}
-
-@media only screen and (min-width: 320px) and (max-width: 479px){
-
-    *{
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
-    .navbar a{
-        font-size: 15px;
-    }
-    h3{
-        font-size: 40px;
-    }
-    .nleft p{
-        font-size: 25px;
-    }
-    .nleft button{
-        font-size: 20px;
-        margin: 0;
-    }
-    .nos{
-        font-size: 15px;
-    }
-    .video{
-        margin:0;
-        width: 100%;
-        height: 300px;
-    }
-    .galeria{
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(8,320px);
-    }
-    h5{
-        font-size: 25px;
-    }
-    .capi, .gba{
-        margin:0;
-        width: 100%;
-    }
-    .form-control{
-        font-size: 20px;
-    }
-    .form-check-label{
-        margin-left:0;
-        font-size: 20px;
-    }
-}
+/*# sourceMappingURL=style.css.map */
