@@ -1,4 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Anton&family=Poppins:wght@200&display=swap");
+
+$color1: rgba(255, 0, 0, 0.7);
+$color2: rgba(211, 35, 35, 0.5);
+$font: Arial, Helvetica, sans-serif;
+
 * {
   padding: 0;
   margin: 0;
@@ -16,7 +21,7 @@ html {
 }
 
 .navbar {
-  background-color: rgba(255, 0, 0, 0.7);
+  background-color: $color1;
   a {
     font-size: 25px;
     color: #fff;
@@ -37,12 +42,16 @@ html {
   }
 }
 
+@mixin sizes($text, $color, $texta){
+  font-size: $text;
+  color: $color;
+  text-align: $texta;
+}
+
 h3 {
-  background-color: rgba(255, 0, 0, 0.7);
-  color: #fff;
-  text-align: center;
+  @include sizes(50px, #fff, center);
+  background-color: $color1;
   padding: 20px;
-  font-size: 50px;
   margin: 0;
 }
 
@@ -64,7 +73,7 @@ h3 {
 }
 
 h4 {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: $font;
   text-align: center;
   font-size: 40px;
   margin: 0;
@@ -86,7 +95,7 @@ h4 {
     margin-top: 40px;
   }
   ::selection {
-    background-color: rgba(211, 35, 35, 0.5);
+    background-color: $color2;
   }
   button {
     border: 2px solid #000;
@@ -115,12 +124,10 @@ h4 {
 }
 
 .nos {
-  background-color: rgba(255, 0, 0, 0.5);
-  text-align: justify;
-  font-size: 25px;
-  color: #000;
+    @include sizes(25px, #000, justify);
+  background-color: $color2;
   border: 2px solid rgba(250, 94, 94);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: $font;
   margin-bottom: 0;
 }
 
@@ -131,7 +138,7 @@ h4 {
 }
 
 .galeria {
-  background-color: rgba(255, 0, 0, 0.5);
+  background-color: $color2;
   height: auto;
   width: 100%;
   display: grid;
@@ -198,15 +205,13 @@ h4 {
 }
 
 .subir {
+  @include sizes(30px, #fff, center);
   height: 40px;
   width: 40px;
-  background-color: rgba(255, 0, 0, 0.5);
-  color: #fff;
+  background-color: $color2;
   border: 4px solid #fff;
   right: 20px;
   bottom: 20px;
-  text-align: center;
-  font-size: 30px;
   line-height: 45px;
   border-radius: 50%;
   position: fixed;
@@ -214,11 +219,9 @@ h4 {
 }
 
 h5 {
-  font-family: Arial, Helvetica, sans-serif;
-  text-align: center;
-  font-size: 40px;
-  background-color: rgba(255, 0, 0, 0.5);
-  color: #fff;
+  @include sizes(40px, #fff, center); 
+  font-family: $font;
+  background-color: $color2;
   margin: 20px;
 }
 
@@ -226,13 +229,13 @@ h5 {
   width: 400px;
   height: 400px;
   margin-left: 350px;
-  border: outset 10px rgba(255, 0, 0, 0.5);
+  border: outset 10px $color2;
   margin-bottom: 45px;
   margin-top: 40px;
 }
 
 .form-check-label {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: $font;
   text-align: center;
   margin-left: 180px;
   font-size: 25px;
@@ -245,36 +248,34 @@ h5 {
 
 .nombre {
   font-size: 25px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: $font;
   margin-bottom: 35px;
   label {
     font-size: 25px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: $font;
     margin-bottom: 25px;
   }
 }
 
 .lista {
   font-size: 25px;
-  font-family: Arial, Helvetica, sans-serif;
-  color: rgba(255, 0, 0, 0.7);
+  font-family: $font;
+  color: $color1;
   margin-bottom: 40px;
   option {
-    color: rgba(255, 0, 0, 0.7);
+    color: $color1;
   }
 }
 
 footer {
+  @include sizes(25px,#fff, center);
   height: auto;
   width: 100%;
-  text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 25px;
-  background-color: rgba(255, 0, 0, 0.7);
+  font-family: $font;
+  background-color: $color1;
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url(./fotos/formasbasicas.jpg);
   background-position: center;
   background-size: cover;
-  color: #fff;
   box-shadow: 0 0 5px 1px #fff;
   padding: 15px;
   a {
@@ -282,7 +283,7 @@ footer {
     letter-spacing: 50px;
     font-size: 50px;
     :hover {
-      color: rgba(255, 0, 0, 0.5);
+      color: $color2;
     }
   }
 }
