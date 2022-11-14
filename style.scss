@@ -112,6 +112,8 @@ h4 {
     border-radius: 50%;
     background-color: rgb(255, 0, 0);
     border: 2px solid #fff;
+    object-fit: cover;
+    background-image: #fff contain;
   }
 }
 
