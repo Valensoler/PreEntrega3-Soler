@@ -226,10 +226,13 @@ h5 {
   margin: 20px;
 }
 
-.capi, .gba {
-  width: 400px;
-  height: 400px;
-  margin-left: 350px;
+.comercios {
+  background-image: url(./fotos/autos.jpg);
+}
+.comercios .capi, .comercios .gba {
+  width: 90%;
+  height: 500px;
+  margin-left: 65px;
   border: outset 10px rgba(211, 35, 35, 0.5);
   margin-bottom: 45px;
   margin-top: 40px;

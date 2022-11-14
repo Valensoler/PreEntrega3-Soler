@@ -225,13 +225,16 @@ h5 {
   margin: 20px;
 }
 
-.capi, .gba {
-  width: 400px;
-  height: 400px;
-  margin-left: 350px;
-  border: outset 10px $color2;
-  margin-bottom: 45px;
-  margin-top: 40px;
+.comercios{
+  background-image: url(./fotos/autos.jpg);
+  .capi, .gba {
+    width: 90%;
+    height: 500px;
+    margin-left: 65px;
+    border: outset 10px $color2;
+    margin-bottom: 45px;
+    margin-top: 40px;
+  }
 }
 
 .form-check-label {
