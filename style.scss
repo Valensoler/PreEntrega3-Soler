@@ -345,6 +345,12 @@ footer {
     padding: 0;
     box-sizing: border-box;
   }
+  .carousel-indicators{
+    li{
+      object-fit: cover;
+      background-image: #fff contain;
+    }
+  }
   .nleft{
     button{
       margin-left: 170px;
@@ -382,6 +388,12 @@ footer {
   .navbar{
     a {
       font-size: 15px;
+    }
+  }
+  .carousel-indicators{
+    li{
+      object-fit: cover;
+      background-image: #fff contain;
     }
   }
   h3 {
